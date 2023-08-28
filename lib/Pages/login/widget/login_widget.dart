@@ -29,8 +29,6 @@ Widget BuildThirdPartyLogin(BuildContext context) {
     children: [
       BuildIcon(),
       buildLogin(context),
-
-      Text("data")
     ],
   );
 }
