@@ -26,7 +26,7 @@ AppBar buildAppBar() {
 // ignore: non_constant_identifier_names
 Widget BuildThirdPartyLogin(BuildContext context) {
   return Column(
-    children: [BuildIcon(), buildLogin(context), Text("8888"), Text("123555")],
+    children: [BuildIcon(), buildLogin(context),],
   );
 }
 
