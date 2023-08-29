@@ -204,7 +204,7 @@ Widget bottonName(String textName, String bottonType, void Function()? func) {
     onTap: func,
     child: Container(
       margin: EdgeInsets.only(
-          left: 25.w, right: 25.w, top: bottonType == "login" ? 40.h : 20.h),
+          left: 25.w, right: 25.w, top: bottonType == "login" ? 30.h : 20.h),
       width: 325.w,
       height: 50.h,
       decoration: BoxDecoration(
