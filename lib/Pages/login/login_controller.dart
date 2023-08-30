@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ulearning_app/Pages/login/Login_bloc/login_bloc.dart';
+import 'package:ulearning_app/common/values/widget/Flutter_toast.dart';
 
 class LoginController {
   final BuildContext context;
@@ -14,14 +15,17 @@ class LoginController {
         String password = state.password;
 
         if (emailAddress.isEmpty) {
-          print("ກະລຸນາປ້ອນອີເມລ");
+          toastInfo(msg: "ກະລຸນາປ້ອນອີເມລ");
+          // print("ກະລຸນາປ້ອນອີເມລ");
         } else {
           print("email is $emailAddress");
         }
         if (password.isEmpty) {
-          print("ກະລຸນາປ້ອນລະຫັດຜ່ານ");
+          toastInfo(msg: "ກະລຸນາປ້ອນລະຫັດຜ່ານ");
+          // print("ກະລຸນາປ້ອນລະຫັດຜ່ານ");
         } else if (password.length < 8) {
-          print("ລະຫັດຕ້ອງມີຢ່າງນ້ອຍ 8 ໂຕ");
+          toastInfo(msg: "ລະຫັດຕ້ອງມີຢ່າງນ້ອຍ 8 ໂຕ");
+          // print("ລະຫັດຕ້ອງມີຢ່າງນ້ອຍ 8 ໂຕ");
         }
         // try {
         //   final credential = await FirebaseAuth.instance
